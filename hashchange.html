@@ -1,0 +1,27 @@
+<html>
+<head><head>
+<body>
+    <ul>
+        <li><a href="#Home">Home</a>
+
+        </li>
+        <li><a href="#Contact">Contact</a>
+
+        </li>
+        <li><a href="#About">About</a>
+
+        </li>
+    </ul>
+    <ul id="results"></ul>
+</body>
+<script language="Javascript">
+   window.onhashchange = function (event) {
+       var result = document.getElementById("results");
+
+       result.innerHTML += "<li><strong>location.hash</strong>: " + location.hash +
+           " <strong>oldURL</strong>: " + event.oldURL + " <strong>newURL</strong>: " + event.newURL;
+
+   }
+</script>
+</html>
+ 
